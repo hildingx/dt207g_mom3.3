@@ -28,22 +28,27 @@
                     med information om företagsnamn, jobbtitel, plats, start- och slutdatum samt en beskrivning av tjänsten.
                     <br>
                     <br>
-                    Denna information lagras sedan i en postgreSQL-databas och hämtas och visas på förstasidan tillsammans med övriga lagrade arbetserfarenheter.
+                    Denna information lagras sedan i en NoSQL-databas, MongoDB, hostad på <a href="https://www.mongodb.com/atlas/database">MongoDB Atlas</a>. 
+                    Data hämtas och visas på startsidan där alla lagrade arbetserfarenheter presenteras. Hämtningen sker med fetch-anrop till ett anpassat API, 
+                    och data lagras med hjälp av POST-metoden medan borttagning av data hanteras via DELETE-metoden.
+
+                    och hämtas och visas på förstasidan tillsammans med övriga lagrade arbetserfarenheter via Render. Som administrationsverktyg har Compass använts.
                     Hämtning sker med fetch-anrop till ett egenkonfigurerat API och skrivs ut i DOM. Lagring av data görs med fetch-anrop med POST-metod. Borttagning görs med DELETE-metod.
                     <br>
                     <br>
-                    På backendsidan används Node.js tillsammans med Express för att skapa ett RESTful API som hanterar alla interaktioner med databasen. 
-                    Datalagringen sker på PostgreSQL databas deployad på Render.
+                    På backendsidan används Node.js och Express för att skapa ett RESTful API som hanterar alla interaktioner med databasen, vilken är deployad via Render.
                     <br>
                     <br>
-                    På frontendsidan används HTML, SCSS och JS.
+                    På frontendsidan används HTML, SCSS och JS för att skapa användargränssnittet.
                 </p>
 
                 <h2>Slutsats</h2>
                 <p>
-                    Kul projekt där jag fått lära mig att sätta upp ett egen API med metoderna POST, GET, DELETE och PUT 
-                    för att sedan "testa" API't i uppgift 2 genom fetch-anrop och CRUD-operationer till databasen.
-                    Jag börjar förstå hela kedjan och hur varje del interagerar med varandra. Det blir lättare att förstå frontend respektive backend när man ser hur det hänger ihop och fungerar. KUL!
+                    Väldigt kul att få prova på att använda NoSQL. Betydligt enklare att sätta upp och smidigare på alla sätt och vis.
+                     <br><br>
+                     Ett litet bakslag uppstod vid publiceringen då ytterligare en tjänst behövde integreras. Jag upplevde det som lite "rörigt" med MongoDB Atlas, men det är troligen för att det är nytt för mig.
+                    <br><br>
+                     I övrigt ett roligt moment!
                 </p>
             </article> 
         </main>
