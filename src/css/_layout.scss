@@ -1,0 +1,177 @@
+//Styling av element. 
+//Grid, flexbox och containers.
+
+@use 'base' as *;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: $header-footer-color;
+    height: 50px;
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 4px 5px -5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: $header-footer-text-color;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 1em;
+
+    @media (max-width: 330px) {
+        font-size: 0.8em;
+    }
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: $white;
+}
+
+.current {
+    color: $white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    background-color: $background-color-main;
+
+    h1 {
+        text-align: center;
+        margin: 100px 0 50px 0;
+    }
+
+    .cv {
+        font-family: 'Roboto Slab', serif;
+        font-size: 4em;
+        margin: 75px 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: clamp(1.2em, 3vw, 1.6em);;
+    }
+}
+
+#loadingIndicator {
+    display: none;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#workExps {
+    background-color: $background-color-form;
+    border-color: $border-color;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 0 50px 50px 50px;
+    width: 80%;
+    max-width: 800px;
+
+    .workExp {
+        padding: 50px;
+        padding-top: 20px;
+        text-align: center;
+    
+        @media (max-width: 570px) {
+            padding: 25px 15px;
+        }
+    }
+    
+    .spanLine {
+        display: block;
+        height: 1px;
+        background-color: $button-color;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    span:last-of-type {
+        display: none;
+    }
+}
+
+.about-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    h1 {
+        font-size: clamp(1.3em, 4vw, 2.2em);
+    }
+
+    h2 {
+        font-size: clamp(1.2em, 3vw, 1.6em);
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 1.5;
+        width: 80%;
+        max-width: 800px;
+    }
+
+    h2:last-of-type {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+#formError {
+    color: $error-red;
+    display: none;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+#expAdded {
+    color: #000;
+    display: none;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: $header-footer-color;
+    color: $header-footer-text-color;
+    padding: 30px;
+    box-shadow: 0 -8px 10px -5px rgba(0, 0, 0, 0.2), 0 -4px 5px -5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    z-index: 1;
+}

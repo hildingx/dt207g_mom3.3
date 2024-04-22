@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lägg till - Moment 2.2</title>
+    <script type="module" src="js/addexp.js"></script>
+    <link rel="stylesheet" href="css/main.scss">
+    <link rel="stylesheet" href="css/main.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="about.html">Om</a></li>
+                    <li><a href="add.html" class="current">Lägg till </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Lägg till arbetserfarenhet</h1>
+            <form id="workExpForm">
+                <label for="companyname">Företagsnam:</label>
+                <input type="text" id="companyname" placeholder="Företagsnamn" required>
+                <label for="jobtitle">Jobbtitel:</label>
+                <input type="text" id="jobtitle" placeholder="Jobbtitel" required>
+                <label for="location">Plats:</label>
+                <input type="text" id="location" placeholder="Plats" required>
+                <label for="startdate">Startdatum:</label>
+                <input type="date" id="startdate" required>
+                <label for="enddate">Slutdatum:</label>
+                <input type="date" id="enddate" required>
+                <label for="description">Beskrivning:</label>
+                <textarea id="description" placeholder="Beskrivning" required></textarea>
+                <div id="formError" class="form-error"></div>
+                <div id="expAdded" class="exp-added"></div>
+                <button class="button submitBtn" type="submit">Lägg till arbetserfarenhet</button>
+            </form>
+        </main>
+        <footer>
+            <p>Alexander Hilding</p>
+        </footer>
+    </div>
+</body>
+</html>

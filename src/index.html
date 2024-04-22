@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida - Moment 2.2</title>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/deleteexp.js"></script>
+    <link rel="stylesheet" href="css/main.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current">Startsida</a></li>
+                    <li><a href="about.html">Om</a></li>
+                    <li><a href="add.html">Lägg till </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="cv">CV</h1>
+            <h2>Tillagda arbetslivserfarenheter</h2>
+            <!-- Laddningsindikator -->
+            <div id="loadingIndicator">
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
+                </div>
+                <p id="loadingText">Laddar arbetserfarenheter...</p>
+            </div>
+            <!-- Här skrivs hämtad data ut -->
+            <div id="workExps">
+                
+            </div>
+        </main>
+        <footer>
+            <p>Alexander Hilding</p>
+        </footer>
+    </div>
+</body>
+</html>

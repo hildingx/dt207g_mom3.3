@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om - Moment 2.2</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <link rel="stylesheet" href="css/main.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="about.html" class="current">Om</a></li>
+                    <li><a href="add.html">Lägg till </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="about-article">
+                <h1>Om webbapplikationen</h1>
+                <h2>Syfte</h2>
+                <p>
+                    Syftet med den här webbapplikationen är att hantera arbetserfarenheter. Under "Lägg till" kan användaren lägga till en arbetserfarenhet
+                    med information om företagsnamn, jobbtitel, plats, start- och slutdatum samt en beskrivning av tjänsten.
+                    <br>
+                    <br>
+                    Denna information lagras sedan i en postgreSQL-databas och hämtas och visas på förstasidan tillsammans med övriga lagrade arbetserfarenheter.
+                    Hämtning sker med fetch-anrop till ett egenkonfigurerat API och skrivs ut i DOM. Lagring av data görs med fetch-anrop med POST-metod. Borttagning görs med DELETE-metod.
+                    <br>
+                    <br>
+                    På backendsidan används Node.js tillsammans med Express för att skapa ett RESTful API som hanterar alla interaktioner med databasen. 
+                    Datalagringen sker på PostgreSQL databas deployad på Render.
+                    <br>
+                    <br>
+                    På frontendsidan används HTML, SCSS och JS.
+                </p>
+
+                <h2>Slutsats</h2>
+                <p>
+                    Kul projekt där jag fått lära mig att sätta upp ett egen API med metoderna POST, GET, DELETE och PUT 
+                    för att sedan "testa" API't i uppgift 2 genom fetch-anrop och CRUD-operationer till databasen.
+                    Jag börjar förstå hela kedjan och hur varje del interagerar med varandra. Det blir lättare att förstå frontend respektive backend när man ser hur det hänger ihop och fungerar. KUL!
+                </p>
+            </article> 
+        </main>
+        <footer>
+            <p>Alexander Hilding</p>
+        </footer>
+    </div>
+</body>
+</html>
