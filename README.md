@@ -14,3 +14,5 @@ Hämtning sker med fetch-anrop till ett egenkonfigurerat API och skrivs ut i DOM
 På backendsidan används Node.js och Express för att skapa ett RESTful API som hanterar alla interaktioner med databasen, vilken är deployad via Render.
 
 På frontendsidan används HTML, SCSS och JS för att skapa användargränssnittet.
+
+Webbaplikationen är publicerad på https://deluxe-dango-d2fa5c.netlify.app/
